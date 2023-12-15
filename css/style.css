@@ -93,6 +93,7 @@ body {
 }
 .container .lower-box .box .profile .credent p {
   color: var(--softPink);
+  margin: 10px 0;
 }
 
 .container .lower-box .box .quote {
