@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+  --darkGrayMagenta: hsl(303, 10%, 53%);
+  --lightGrayMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 1200px;
+  margin: auto;
+}
+.container .upper-box {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  gap: 20px;
+}
+
+.container .upper-box .box {
+  padding: 30px;
+  width: 50%;
+}
+.container .upper-box .box.left h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--darkMagenta);
+  margin-bottom: 20px;
+}
+
+.container .upper-box .box.left p {
+  color: var(--darkGrayMagenta);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container .upper-box .box.right .panel {
+  background-color: var(--lightGrayMagenta);
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.container .upper-box .box.right .panel i {
+  color: #ffa534;
+}
+.container .upper-box .box.right .panel:nth-child(2) {
+  margin-left: 20px;
+}
+.container .upper-box .box.right .panel:last-child {
+  margin-left: 40px;
+}
+.container .lower-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .lower-box .box {
+  background-color: var(--darkMagenta);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.container .lower-box .box .profile {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.container .lower-box .box .profile img {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.container .lower-box .box .profile .credent h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.container .lower-box .box .profile .credent p {
+  color: var(--softPink);
+}
+
+.container .lower-box .box .quote {
+  color: var(--white);
+  line-height: 1.8;
+  font-size: 18px;
+}
+.container .lower-box .irene-roberts {
+  margin-top: 30px;
+}
+
+.container .lower-box .anne-wallace {
+  margin-top: 50px;
+}
